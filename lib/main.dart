@@ -28,7 +28,9 @@ class _QuotesListState extends State<QuotesList> {
   ];
 
   Widget quoteTemplate(quote) {
-    return Card();
+    return const Card(
+      margin: EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 0.0),
+    );
   }
 
   @override
