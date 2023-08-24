@@ -28,8 +28,29 @@ class _QuotesListState extends State<QuotesList> {
   ];
 
   Widget quoteTemplate(quote) {
-    return const Card(
-      margin: EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 0.0),
+    return Card(
+      margin: const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 0.0),
+      child: Column(
+        children: <Widget>[
+          Text(
+            quote.text,
+            style: TextStyle(
+              fontSize: 18.0,
+              color: Colors.grey[600],
+            ),
+          ),
+          const SizedBox(
+            height: 6.0,
+          ),
+          Text(
+            quote.author,
+            style: TextStyle(
+              fontSize: 14.0,
+              color: Colors.grey[800],
+            ),
+          ),
+        ],
+      ),
     );
   }
 
