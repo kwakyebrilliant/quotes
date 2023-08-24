@@ -20,6 +20,7 @@ class _QuotesListState extends State<QuotesList> {
       backgroundColor: Colors.grey[200],
       appBar: AppBar(
         title: const Text('Awesome Quotes'),
+        centerTitle: true,
       ),
     );
   }
