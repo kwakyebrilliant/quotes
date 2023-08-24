@@ -27,6 +27,10 @@ class _QuotesListState extends State<QuotesList> {
         author: 'Egya Amoah'),
   ];
 
+  Widget quoteTemplate(quote) {
+    return Card();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
