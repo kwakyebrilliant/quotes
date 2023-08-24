@@ -30,9 +30,7 @@ class _QuotesListState extends State<QuotesList> {
         backgroundColor: Colors.redAccent,
       ),
       body: Column(
-        children: quotes.map((quote) {
-          return Text(quote);
-        }).toList(),
+        children: quotes.map((quote) => Text(quote)).toList(),
       ),
     );
   }
